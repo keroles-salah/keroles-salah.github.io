@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keroles Salah Fakhry - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#0f172a] text-gray-100">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-dark" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-bold text-2xl">
+                    <span class="gradient-text">K</span><span class="text-white">S</span><span
+                        class="gradient-text">F</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-white">Home</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-white">About</a>
+                    <a href="#experience" class="nav-link text-gray-300 hover:text-white">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-white">Projects</a>
+                    <a href="#skills" class="nav-link text-gray-300 hover:text-white">Skills</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                </div>
+                <button class="md:hidden text-white" onclick="toggleMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-[#1e293b] border-t border-gray-700" id="mobileMenu">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#home" class="block py-2 text-gray-300 hover:text-white">Home</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white">About</a>
+                <a href="#experience" class="block py-2 text-gray-300 hover:text-white">Experience</a>
+                <a href="#projects" class="block py-2 text-gray-300 hover:text-white">Projects</a>
+                <a href="#skills" class="block py-2 text-gray-300 hover:text-white">Skills</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen hero-gradient flex items-center relative overflow-hidden">
+        <div id="particles-js"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <p class="text-lg text-gray-300 mb-2">Hello, I'm</p>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                        <span class="gradient-text">Keroles</span><br>
+                        <span class="text-white">Salah Fakhry</span>
+                    </h1>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                        <p class="text-xl text-gray-300">CS Student & Tech Educator</p>
+                    </div>
+                    <p class="text-gray-400 mb-8 max-w-lg leading-relaxed">
+                        Passionate about coding, design, and creating educational content that empowers the next
+                        generation of developers. Turning complex problems into elegant solutions.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="btn-primary px-8 py-3 rounded-full text-white font-semibold">
+                            Get In Touch
+                        </a>
+                        <a href="#projects"
+                            class="px-8 py-3 rounded-full border-2 border-gray-600 text-white font-semibold hover:border-[#6366f1] hover:text-[#6366f1] transition">
+                            View My Work
+                        </a>
+                    </div>
+                    <!-- Social Links -->
+                    <div class="flex space-x-4 mt-8">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#1e293b] flex items-center justify-center text-gray-400 hover:bg-[#6366f1] hover:text-white transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#1e293b] flex items-center justify-center text-gray-400 hover:bg-[#6366f1] hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#1e293b] flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" class="flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-[#6366f1] to-[#06b6d4] p-1 float-animation">
+                            <div
+                                class="w-full h-full rounded-full bg-[#1e293b] flex items-center justify-center text-9xl">
+                                <img src="images/profile.jpg" alt="Profile Image" class="w-full h-full object-cover rounded-full">
+                            </div>
+                        </div>
+                        <!-- Floating badges -->
+                        <div
+                            class="absolute -top-4 -right-4 bg-[#6366f1] text-white px-4 py-2 rounded-full text-sm font-semibold glow">
+                            Coding
+                        </div>
+                        <div
+                            class="absolute -bottom-4 -left-4 bg-[#06b6d4] text-white px-4 py-2 rounded-full text-sm font-semibold glow-accent">
+                            Design
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-gray-400 text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-[#1e293b]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="stat-card p-6 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-code text-3xl text-[#6366f1] mb-3"></i>
+                    <h3 class="text-3xl font-bold gradient-text counter" data-target="15">0</h3>
+                    <p class="text-gray-400 text-sm mt-1">Projects Done</p>
+                </div>
+                <div class="stat-card p-6 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-users text-3xl text-[#06b6d4] mb-3"></i>
+                    <h3 class="text-3xl font-bold gradient-text counter" data-target="100">0</h3>
+                    <p class="text-gray-400 text-sm mt-1">Students Mentored</p>
+                </div>
+                <div class="stat-card p-6 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-video text-3xl text-red-400 mb-3"></i>
+                    <h3 class="text-3xl font-bold gradient-text counter" data-target="25">0</h3>
+                    <p class="text-gray-400 text-sm mt-1">Videos Created</p>
+                </div>
+                <div class="stat-card p-6 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-award text-3xl text-yellow-400 mb-3"></i>
+                    <h3 class="text-3xl font-bold gradient-text counter" data-target="3">0</h3>
+                    <p class="text-gray-400 text-sm mt-1">Certifications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-[#0f172a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-[#6366f1] font-semibold mb-2">Get To Know Me</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="relative">
+                        <div class="w-full h-96 bg-gradient-to-br from-[#6366f1] to-[#06b6d4] rounded-2xl p-1">
+                            <div
+                                class="w-full h-full bg-[#1e293b] rounded-2xl flex items-center justify-center text-9xl">
+                                🎓
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">A Passionate <span
+                            class="gradient-text">Learner</span> & Educator</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        I'm a Computer Science student at Assiut National University with a strong passion for
+                        technology, design, and education. I enjoy solving complex problems and helping others develop
+                        their technical skills.
+                    </p>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        As a Problem Solving Mentor at ANU and EELU ICPC Communities, I guide students through
+                        algorithmic challenges and help them build critical thinking skills. I also create educational
+                        content on YouTube, covering topics like SQL, Microsoft Access, and Data Structures.
+                    </p>
+                    <!-- Info Grid -->
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-user text-[#6366f1]"></i>
+                            <div>
+                                <p class="text-xs text-gray-500">Name</p>
+                                <p class="text-sm text-white">Keroles Salah</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-[#06b6d4]"></i>
+                            <div>
+                                <p class="text-xs text-gray-500">Location</p>
+                                <p class="text-sm text-white">Assiut, Egypt</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-[#6366f1]"></i>
+                            <div>
+                                <p class="text-xs text-gray-500">Email</p>
+                                <p class="text-sm text-white">Contact Me</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-[#06b6d4]"></i>
+                            <div>
+                                <p class="text-xs text-gray-500">Phone</p>
+                                <p class="text-sm text-white">+20 120 455 7928</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary px-6 py-3 rounded-full text-white font-semibold inline-block">
+                        Let's Talk <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="py-20 bg-[#1e293b]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-[#6366f1] font-semibold mb-2">My Qualifications</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Education & <span
+                        class="gradient-text">Certifications</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-6 text-white flex items-center">
+                        <i class="fas fa-graduation-cap text-[#6366f1] mr-3"></i>
+                        Education
+                    </h3>
+                    <div class="card-modern p-6 rounded-2xl">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-14 h-14 bg-[#6366f1] rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-university text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white">Bachelor of Science in Computer Science</h4>
+                                <p class="text-[#6366f1] font-medium">Assiut National University</p>
+                                <p class="text-gray-400 text-sm mt-2">Sep 2023 - Present</p>
+                                <p class="text-gray-400 text-sm">Assiut, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certifications -->
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-6 text-white flex items-center">
+                        <i class="fas fa-certificate text-[#06b6d4] mr-3"></i>
+                        Certifications
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="card-modern p-4 rounded-xl flex items-center space-x-4">
+                            <i class="fab fa-hackerrank text-green-400 text-2xl"></i>
+                            <div>
+                                <p class="font-medium text-white">SQL (Basic)</p>
+                                <p class="text-gray-400 text-sm">HackerRank</p>
+                            </div>
+                        </div>
+                        <div class="card-modern p-4 rounded-xl flex items-center space-x-4">
+                            <i class="fab fa-hackerrank text-green-400 text-2xl"></i>
+                            <div>
+                                <p class="font-medium text-white">SQL (Intermediate)</p>
+                                <p class="text-gray-400 text-sm">HackerRank</p>
+                            </div>
+                        </div>
+                        <div class="card-modern p-4 rounded-xl flex items-center space-x-4">
+                            <i class="fas fa-laptop-code text-blue-400 text-2xl"></i>
+                            <div>
+                                <p class="font-medium text-white">Introduction to Web Technologies</p>
+                                <p class="text-gray-400 text-sm">ITI Assiut Branch (60 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-[#0f172a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-[#6366f1] font-semibold mb-2">My Journey</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Work <span class="gradient-text">Experience</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] mx-auto"></div>
+            </div>
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="card-modern p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-2">
+                                <span
+                                    class="px-3 py-1 bg-green-500 bg-opacity-20 text-green-400 rounded-full text-sm">Current</span>
+                                <span class="text-gray-400 text-sm">Mar 2025 - Present</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white">Problem Solving Mentor</h3>
+                            <p class="text-[#6366f1] font-medium">ANU ICPC Community</p>
+                        </div>
+                        <span class="text-sm text-gray-500 mt-2 md:mt-0 px-4 py-2 bg-[#1e293b] rounded-full">Assiut,
+                            Egypt</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Provided mentorship to ANU students, assisting them with problem-solving
+                                strategies.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Supported the development of their critical thinking skills, helping them tackle
+                                complex tasks effectively.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="card-modern p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <div>
+                            <span class="text-gray-400 text-sm">Oct 2024 - Feb 2025</span>
+                            <h3 class="text-xl font-semibold text-white mt-1">Problem Solving Mentor</h3>
+                            <p class="text-[#06b6d4] font-medium">EELU ICPC Community</p>
+                        </div>
+                        <span class="text-sm text-gray-500 mt-2 md:mt-0 px-4 py-2 bg-[#1e293b] rounded-full">Assiut,
+                            Egypt</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Mentored a group of students at EELU, guiding them through problem-solving
+                                techniques.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Helped improve their analytical and logical thinking skills, enabling them to solve
+                                complex problems efficiently.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="card-modern p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-2">
+                                <span
+                                    class="px-3 py-1 bg-green-500 bg-opacity-20 text-green-400 rounded-full text-sm">Current</span>
+                                <span class="text-gray-400 text-sm">Apr 2024 - Present</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white">Graphic Designer</h3>
+                            <p class="text-purple-400 font-medium">Human For Good Community</p>
+                        </div>
+                        <span class="text-sm text-gray-500 mt-2 md:mt-0 px-4 py-2 bg-[#1e293b] rounded-full">Assiut,
+                            Egypt</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Started as an intern with Human for Good, gaining hands-on experience before
+                                transitioning to a designer role.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Initially focused on creating designs using Photoshop, later transitioning to Canva
+                                for more efficient design work.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="card-modern p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-2">
+                                <span
+                                    class="px-3 py-1 bg-green-500 bg-opacity-20 text-green-400 rounded-full text-sm">Current</span>
+                                <span class="text-gray-400 text-sm">Dec 2023 - Present</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white">Content Creator</h3>
+                            <p class="text-red-400 font-medium">YouTube</p>
+                        </div>
+                        <span class="text-sm text-gray-500 mt-2 md:mt-0 px-4 py-2 bg-[#1e293b] rounded-full">Assiut,
+                            Egypt</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Created educational content on YouTube, including full playlists on Microsoft Access
+                                and SQL.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-3"></i>
+                            <span>Share problem-solving walkthroughs and explain key Data Structures topics to support
+                                students and beginners in tech.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-[#1e293b]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-[#6366f1] font-semibold mb-2">My Recent Work</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Featured <span class="gradient-text">Projects</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="card-modern rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-gradient-to-br from-[#6366f1] to-[#8b5cf6] flex items-center justify-center">
+                        <i class="fas fa-code text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold text-white">Fox Academy</h3>
+                            <span class="text-sm text-gray-400">Nov 2023 - Jan 2024</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Developed the frontend of an educational web platform that aggregates YouTube videos, PDFs,
+                            and documentation to help students find materials faster.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-[#6366f1] bg-opacity-20 text-[#6366f1] rounded-full text-sm">HTML</span>
+                            <span
+                                class="px-3 py-1 bg-blue-500 bg-opacity-20 text-blue-400 rounded-full text-sm">CSS</span>
+                            <span
+                                class="px-3 py-1 bg-yellow-500 bg-opacity-20 text-yellow-400 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <a href="#" class="text-[#6366f1] hover:text-[#8b5cf6] font-medium inline-flex items-center">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- YouTube Channel -->
+                <div class="card-modern rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center">
+                        <i class="fab fa-youtube text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold text-white">YouTube Educational Content</h3>
+                            <span class="text-sm text-gray-400">Dec 2023 - Present</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Creating educational playlists and tutorials to help students master technical concepts.
+                        </p>
+                        <div class="space-y-2 mb-4">
+                            <p class="text-gray-400 text-sm"><i
+                                    class="fas fa-play-circle text-red-400 mr-2"></i>Microsoft Access Full Playlists</p>
+                            <p class="text-gray-400 text-sm"><i class="fas fa-play-circle text-red-400 mr-2"></i>SQL
+                                Tutorials & Walkthroughs</p>
+                            <p class="text-gray-400 text-sm"><i class="fas fa-play-circle text-red-400 mr-2"></i>Data
+                                Structures Explanations</p>
+                        </div>
+                        <a href="#" class="text-red-400 hover:text-red-300 font-medium inline-flex items-center">
+                            Visit Channel <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-[#0f172a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-[#6366f1] font-semibold mb-2">My Abilities</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] mx-auto"></div>
+            </div>
+
+            <!-- Skill Bars -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-8 text-white">Programming Languages</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">HTML & CSS</span>
+                                <span class="text-[#6366f1]">90%</span>
+                            </div>
+                            <div class="skill-bar-bg h-2">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">JavaScript</span>
+                                <span class="text-[#6366f1]">85%</span>
+                            </div>
+                            <div class="skill-bar-bg h-2">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">SQL & MySQL</span>
+                                <span class="text-[#06b6d4]">80%</span>
+                            </div>
+                            <div class="skill-bar-bg h-2">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">Python</span>
+                                <span class="text-[#06b6d4]">75%</span>
+                            </div>
+                            <div class="skill-bar-bg h-2">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-300 font-medium">C++</span>
+                                <span class="text-[#6366f1]">80%</span>
+                            </div>
+                            <div class="skill-bar-bg h-2">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-8 text-white">Tools & Design</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="card-modern p-6 rounded-xl text-center">
+                            <i class="fab fa-html5 text-orange-500 text-4xl mb-3"></i>
+                            <p class="text-white font-medium">HTML5</p>
+                            <p class="text-gray-400 text-sm">Expert</p>
+                        </div>
+                        <div class="card-modern p-6 rounded-xl text-center">
+                            <i class="fab fa-css3-alt text-blue-500 text-4xl mb-3"></i>
+                            <p class="text-white font-medium">CSS3</p>
+                            <p class="text-gray-400 text-sm">Expert</p>
+                        </div>
+                        <div class="card-modern p-6 rounded-xl text-center">
+                            <i class="fab fa-js text-yellow-400 text-4xl mb-3"></i>
+                            <p class="text-white font-medium">JavaScript</p>
+                            <p class="text-gray-400 text-sm">Advanced</p>
+                        </div>
+                        <div class="card-modern p-6 rounded-xl text-center">
+                            <i class="fas fa-database text-green-400 text-4xl mb-3"></i>
+                            <p class="text-white font-medium">MySQL</p>
+                            <p class="text-gray-400 text-sm">Advanced</p>
+                        </div>
+                        <div class="card-modern p-6 rounded-xl text-center">
+                            <i class="fab fa-git-alt text-orange-600 text-4xl mb-3"></i>
+                            <p class="text-white font-medium">Git</p>
+                            <p class="text-gray-400 text-sm">Proficient</p>
+                        </div>
+                        <div class="card-modern p-6 rounded-xl text-center">
+                            <i class="fas fa-palette text-pink-400 text-4xl mb-3"></i>
+                            <p class="text-white font-medium">Canva</p>
+                            <p class="text-gray-400 text-sm">Expert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div data-aos="fade-up">
+                <h3 class="text-2xl font-semibold mb-8 text-white text-center">Soft Skills</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-6 py-3 bg-[#6366f1] bg-opacity-20 text-[#6366f1] rounded-full font-medium">Self
+                        Learning</span>
+                    <span class="px-6 py-3 bg-[#06b6d4] bg-opacity-20 text-[#06b6d4] rounded-full font-medium">Technical
+                        Documentation</span>
+                    <span
+                        class="px-6 py-3 bg-purple-500 bg-opacity-20 text-purple-400 rounded-full font-medium">Presentation
+                        Skills</span>
+                    <span
+                        class="px-6 py-3 bg-pink-500 bg-opacity-20 text-pink-400 rounded-full font-medium">Communication</span>
+                    <span class="px-6 py-3 bg-yellow-500 bg-opacity-20 text-yellow-400 rounded-full font-medium">Problem
+                        Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#1e293b]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-[#6366f1] font-semibold mb-2">Get In Touch</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Contact <span class="gradient-text">Me</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] mx-auto"></div>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Feel free to reach out for collaborations, mentoring
+                    opportunities, or just a friendly hello</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-modern p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 bg-[#6366f1] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-[#6366f1] text-2xl"></i>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Email</h3>
+                    <a href="mailto:keroles@example.com" class="text-gray-400 hover:text-[#6366f1]">Send Email</a>
+                </div>
+                <div class="card-modern p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 bg-[#06b6d4] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-[#06b6d4] text-2xl"></i>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">Phone</h3>
+                    <p class="text-gray-400">+20 120 455 7928</p>
+                </div>
+                <div class="card-modern p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-16 h-16 bg-blue-500 bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-linkedin-in text-blue-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-white font-semibold mb-2">LinkedIn</h3>
+                    <a href="#" class="text-gray-400 hover:text-blue-400">Connect with me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0f172a] py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <span class="gradient-text text-2xl font-bold">KSF</span>
+            </div>
+            <p class="text-gray-400 mb-2">Computer Science Student | Problem Solving Mentor | Content Creator</p>
+            <p class="text-gray-500 text-sm">&copy; 2026 Keroles Salah Fakhry. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="scripts.js"></script>
+</body>
+
+</html>
