@@ -4,7 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keroles Salah Fakhry - Portfolio</title>
+    <title>Keroles Salah Fakhry - CS Student, ML Enthusiast & Tech Educator</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Keroles Salah Fakhry — Computer Science student at Assiut National University, Machine Learning practitioner (ITIDA/NTI certified, 92%), problem-solving mentor, and tech content creator. Explore my projects, skills, and journey.">
+    <meta name="keywords"
+        content="Keroles Salah, Keroles Salah Fakhry, Computer Science, Machine Learning, Data Science, Problem Solving Mentor, ICPC, Assiut National University, Tech Educator, Portfolio">
+    <meta name="author" content="Keroles Salah Fakhry">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://keroles-sala.me/">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keroles-sala.me/">
+    <meta property="og:title" content="Keroles Salah Fakhry - CS Student, ML Enthusiast & Tech Educator">
+    <meta property="og:description"
+        content="Computer Science student, Machine Learning practitioner (ITIDA/NTI certified), problem-solving mentor, and tech content creator. Explore my portfolio.">
+    <meta property="og:image" content="https://keroles-sala.me/images/profile.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Keroles Salah Fakhry - CS Student, ML Enthusiast & Tech Educator">
+    <meta name="twitter:description"
+        content="Computer Science student, Machine Learning practitioner (ITIDA/NTI certified), problem-solving mentor, and tech content creator.">
+    <meta name="twitter:image" content="https://keroles-sala.me/images/profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <meta name="theme-color" content="#0f172a">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
@@ -14,6 +44,11 @@
 </head>
 
 <body class="bg-[#0f172a] text-gray-100">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 z-[60]"
+        style="width:0%; background: linear-gradient(90deg, #6366f1, #06b6d4); transition: width 0.1s ease-out;">
+    </div>
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 glass-dark" id="navbar">
@@ -26,6 +61,7 @@
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="nav-link text-gray-300 hover:text-white">Home</a>
                     <a href="#about" class="nav-link text-gray-300 hover:text-white">About</a>
+                    <a href="#achievement" class="nav-link text-gray-300 hover:text-white">Achievement</a>
                     <a href="#experience" class="nav-link text-gray-300 hover:text-white">Experience</a>
                     <a href="#projects" class="nav-link text-gray-300 hover:text-white">Projects</a>
                     <a href="#skills" class="nav-link text-gray-300 hover:text-white">Skills</a>
@@ -41,6 +77,7 @@
             <div class="px-4 py-4 space-y-3">
                 <a href="#home" class="block py-2 text-gray-300 hover:text-white">Home</a>
                 <a href="#about" class="block py-2 text-gray-300 hover:text-white">About</a>
+                <a href="#achievement" class="block py-2 text-gray-300 hover:text-white">Achievement</a>
                 <a href="#experience" class="block py-2 text-gray-300 hover:text-white">Experience</a>
                 <a href="#projects" class="block py-2 text-gray-300 hover:text-white">Projects</a>
                 <a href="#skills" class="block py-2 text-gray-300 hover:text-white">Skills</a>
@@ -62,11 +99,12 @@
                     </h1>
                     <div class="flex items-center space-x-2 mb-6">
                         <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                        <p class="text-xl text-gray-300">CS Student & Tech Educator</p>
+                        <p class="text-xl text-gray-300">CS Student & ML Practitioner</p>
                     </div>
                     <p class="text-gray-400 mb-8 max-w-lg leading-relaxed">
-                        Passionate about coding, design, and creating educational content that empowers the next
-                        generation of developers. Turning complex problems into elegant solutions.
+                        Certified Machine Learning practitioner (ITIDA/NTI, 92%) and Computer Science student
+                        passionate about building intelligent systems, mentoring problem solvers, and creating
+                        educational content that empowers the next generation of developers.
                     </p>
                     <div class="flex flex-wrap gap-4">
                         <a href="#contact" class="btn-primary px-8 py-3 rounded-full text-white font-semibold">
@@ -126,24 +164,24 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="stat-card p-6 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fas fa-code text-3xl text-[#6366f1] mb-3"></i>
-                    <h3 class="text-3xl font-bold gradient-text counter" data-target="15">0</h3>
-                    <p class="text-gray-400 text-sm mt-1">Projects Done</p>
+                    <i class="fas fa-award text-3xl text-yellow-400 mb-3"></i>
+                    <h3 class="text-3xl font-bold gradient-text counter" data-target="4">0</h3>
+                    <p class="text-gray-400 text-sm mt-1">Certifications</p>
                 </div>
                 <div class="stat-card p-6 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-users text-3xl text-[#06b6d4] mb-3"></i>
-                    <h3 class="text-3xl font-bold gradient-text counter" data-target="100">0</h3>
-                    <p class="text-gray-400 text-sm mt-1">Students Mentored</p>
+                    <h3 class="text-3xl font-bold gradient-text counter" data-target="2">0</h3>
+                    <p class="text-gray-400 text-sm mt-1">Communities Mentored</p>
                 </div>
                 <div class="stat-card p-6 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fas fa-video text-3xl text-red-400 mb-3"></i>
-                    <h3 class="text-3xl font-bold gradient-text counter" data-target="25">0</h3>
-                    <p class="text-gray-400 text-sm mt-1">Videos Created</p>
+                    <i class="fas fa-clock text-3xl text-[#6366f1] mb-3"></i>
+                    <h3 class="text-3xl font-bold gradient-text counter" data-target="120">0</h3>
+                    <p class="text-gray-400 text-sm mt-1">ML Training Hours</p>
                 </div>
                 <div class="stat-card p-6 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="400">
-                    <i class="fas fa-award text-3xl text-yellow-400 mb-3"></i>
-                    <h3 class="text-3xl font-bold gradient-text counter" data-target="3">0</h3>
-                    <p class="text-gray-400 text-sm mt-1">Certifications</p>
+                    <i class="fas fa-video text-3xl text-red-400 mb-3"></i>
+                    <h3 class="text-3xl font-bold gradient-text">2023</h3>
+                    <p class="text-gray-400 text-sm mt-1">Content Creator Since</p>
                 </div>
             </div>
         </div>
@@ -173,13 +211,14 @@
                             class="gradient-text">Learner</span> & Educator</h3>
                     <p class="text-gray-400 mb-4 leading-relaxed">
                         I'm a Computer Science student at Assiut National University with a strong passion for
-                        technology, design, and education. I enjoy solving complex problems and helping others develop
-                        their technical skills.
+                        Machine Learning, data science, technology, and education. I enjoy solving complex problems
+                        with data and helping others develop their technical skills.
                     </p>
                     <p class="text-gray-400 mb-6 leading-relaxed">
-                        As a Problem Solving Mentor at ANU and EELU ICPC Communities, I guide students through
-                        algorithmic challenges and help them build critical thinking skills. I also create educational
-                        content on YouTube, covering topics like SQL, Microsoft Access, and Data Structures.
+                        As an ITIDA/NTI-certified ML practitioner, I've built and deployed real models — from a
+                        bank churn predictor to a real-time face recognition system. I also mentor students at the
+                        ANU and EELU ICPC Communities, and create educational content on YouTube covering SQL,
+                        Microsoft Access, and Data Structures.
                     </p>
                     <!-- Info Grid -->
                     <div class="grid grid-cols-2 gap-4 mb-8">
@@ -280,6 +319,125 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Achievement: ML Summer Training -->
+    <section id="achievement" class="py-20 bg-[#0f172a] relative overflow-hidden">
+        <!-- Decorative glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#6366f1] opacity-[0.07] rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <p class="text-[#06b6d4] font-semibold mb-2 flex items-center justify-center gap-2">
+                    <i class="fas fa-star"></i> Featured Achievement
+                </p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Machine Learning <span
+                        class="gradient-text">Summer Training</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] mx-auto"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Certificate Image -->
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-br from-[#6366f1] to-[#06b6d4] rounded-2xl opacity-40 blur-lg group-hover:opacity-60 transition duration-500">
+                        </div>
+                        <div class="relative card-modern rounded-2xl overflow-hidden p-2">
+                            <img src="images/certificate-ml-itida-nti.jpg"
+                                alt="Machine Learning Summer Training Certificate - ITIDA & NTI"
+                                class="w-full h-auto rounded-xl object-cover">
+                        </div>
+                        <!-- Score badge -->
+                        <div
+                            class="absolute -top-4 -right-4 bg-gradient-to-br from-[#6366f1] to-[#06b6d4] text-white px-5 py-3 rounded-2xl text-center shadow-lg glow">
+                            <p class="text-2xl font-bold leading-none">92%</p>
+                            <p class="text-[10px] uppercase tracking-wider opacity-90 mt-1">Final Score</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Details -->
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span
+                            class="px-4 py-1.5 bg-[#6366f1] bg-opacity-20 text-[#6366f1] rounded-full text-sm font-medium">ITIDA</span>
+                        <span
+                            class="px-4 py-1.5 bg-[#06b6d4] bg-opacity-20 text-[#06b6d4] rounded-full text-sm font-medium">NTI</span>
+                        <span
+                            class="px-4 py-1.5 bg-green-500 bg-opacity-20 text-green-400 rounded-full text-sm font-medium">Certified</span>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold text-white mb-2">Certificate of Training — Machine Learning</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Completed the Machine Learning Summer Training program by the
+                        <span class="text-white">Information Technology Industry Development Agency (ITIDA)</span>
+                        in collaboration with the
+                        <span class="text-white">National Telecommunication Institute (NTI)</span> —
+                        going from zero to building and deploying real ML models.
+                    </p>
+
+                    <!-- Quick facts grid -->
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <div class="card-modern p-4 rounded-xl text-center">
+                            <i class="fas fa-calendar-alt text-[#6366f1] text-xl mb-2"></i>
+                            <p class="text-white font-semibold text-sm">4 Weeks</p>
+                            <p class="text-gray-500 text-xs">28 Jun – 23 Jul 2026</p>
+                        </div>
+                        <div class="card-modern p-4 rounded-xl text-center">
+                            <i class="fas fa-clock text-[#06b6d4] text-xl mb-2"></i>
+                            <p class="text-white font-semibold text-sm">120 Hours</p>
+                            <p class="text-gray-500 text-xs">90 Technical + 30 Freelancing</p>
+                        </div>
+                        <div class="card-modern p-4 rounded-xl text-center">
+                            <i class="fas fa-trophy text-yellow-400 text-xl mb-2"></i>
+                            <p class="text-white font-semibold text-sm">92% Score</p>
+                            <p class="text-gray-500 text-xs">Graduated</p>
+                        </div>
+                    </div>
+
+                    <!-- Curriculum -->
+                    <div class="mb-6">
+                        <h4 class="text-white font-semibold mb-3 flex items-center">
+                            <i class="fas fa-layer-group text-[#6366f1] mr-2"></i> What I Learned
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-robot text-[#6366f1] mt-1 w-5"></i>
+                                <p class="text-gray-400 text-sm"><span class="text-gray-300">Foundations:</span>
+                                    Python, NumPy, Pandas, Statistics & Visualization</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-chart-bar text-[#06b6d4] mt-1 w-5"></i>
+                                <p class="text-gray-400 text-sm"><span class="text-gray-300">Data Craft:</span> EDA,
+                                    Data Cleaning, Preprocessing & Feature Engineering</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-brain text-purple-400 mt-1 w-5"></i>
+                                <p class="text-gray-400 text-sm"><span class="text-gray-300">Algorithms:</span>
+                                    Linear/Logistic Regression, Naive Bayes, KNN, SVM, Decision Trees, Ensemble &
+                                    Unsupervised Learning</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-sliders-h text-yellow-400 mt-1 w-5"></i>
+                                <p class="text-gray-400 text-sm"><span class="text-gray-300">Optimization:</span>
+                                    Model Selection, Hyperparameter Tuning & Deployment</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key takeaway -->
+                    <blockquote class="border-l-4 border-[#6366f1] pl-4 mb-6 italic text-gray-300">
+                        "Machine learning is not about memorizing algorithms — it's about knowing how to ask the
+                        right questions of your data."
+                    </blockquote>
+
+                    <a href="https://lnkd.in/p/eAmQJ9CM" target="_blank" rel="noopener noreferrer"
+                        class="btn-primary px-6 py-3 rounded-full text-white font-semibold inline-flex items-center">
+                        <i class="fab fa-linkedin-in mr-2"></i> View Full Post on LinkedIn
+                    </a>
                 </div>
             </div>
         </div>
@@ -419,9 +577,145 @@
                 <div class="w-20 h-1 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
+                <!-- Project: Bank Churn Predictor -->
                 <div class="card-modern rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                    <div class="h-48 bg-gradient-to-br from-[#6366f1] to-[#8b5cf6] flex items-center justify-center">
+                    <div class="h-48 bg-gradient-to-br from-[#6366f1] to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold text-white">Bank Churn Predictor</h3>
+                            <span class="text-sm text-gray-400">2026</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Interactive Streamlit web app predicting bank customer churn using a Random Forest
+                            model (86% accuracy) trained on 10,000 customer records, with a polished dark UI and
+                            instant probability scoring.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-[#6366f1] bg-opacity-20 text-[#6366f1] rounded-full text-sm">Python</span>
+                            <span
+                                class="px-3 py-1 bg-red-500 bg-opacity-20 text-red-400 rounded-full text-sm">Streamlit</span>
+                            <span
+                                class="px-3 py-1 bg-green-500 bg-opacity-20 text-green-400 rounded-full text-sm">scikit-learn</span>
+                            <span
+                                class="px-3 py-1 bg-yellow-500 bg-opacity-20 text-yellow-400 rounded-full text-sm">Pandas</span>
+                        </div>
+                        <a href="https://github.com/keroles-salah/churn-predictor" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-[#6366f1] hover:text-[#8b5cf6] font-medium inline-flex items-center">
+                            <i class="fab fa-github mr-2"></i> View on GitHub <i
+                                class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Thanawya Results 2026 -->
+                <div class="card-modern rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-gradient-to-br from-[#06b6d4] to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-search text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold text-white">Thanawya Results 2026</h3>
+                            <span class="text-sm text-gray-400">2026</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            A modern web system for looking up Egyptian high school (Thanawya Amma) exam results by
+                            seat number, with an admin dashboard and a live search interface, deployed on Vercel.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-[#06b6d4] bg-opacity-20 text-[#06b6d4] rounded-full text-sm">HTML</span>
+                            <span
+                                class="px-3 py-1 bg-blue-500 bg-opacity-20 text-blue-400 rounded-full text-sm">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-purple-500 bg-opacity-20 text-purple-400 rounded-full text-sm">Python</span>
+                        </div>
+                        <div class="flex flex-wrap gap-x-5 gap-y-2">
+                            <a href="https://thanawya-results.vercel.app" target="_blank" rel="noopener noreferrer"
+                                class="text-[#06b6d4] hover:text-blue-400 font-medium inline-flex items-center">
+                                Live Demo <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                            <a href="https://github.com/keroles-salah/thanawya-results-2026" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-gray-400 hover:text-white font-medium inline-flex items-center">
+                                <i class="fab fa-github mr-2"></i> Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: InsightFace Name Recognition -->
+                <div class="card-modern rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
+                        <i class="fas fa-user-shield text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold text-white">InsightFace Recognition</h3>
+                            <span class="text-sm text-gray-400">2026</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            A face recognition pipeline built with InsightFace, OpenCV and ONNX Runtime — collects
+                            face samples from a webcam, builds an embeddings database, and identifies known vs
+                            unknown faces from a live camera feed or a single image.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-emerald-500 bg-opacity-20 text-emerald-400 rounded-full text-sm">Python</span>
+                            <span
+                                class="px-3 py-1 bg-teal-500 bg-opacity-20 text-teal-400 rounded-full text-sm">InsightFace</span>
+                            <span
+                                class="px-3 py-1 bg-blue-500 bg-opacity-20 text-blue-400 rounded-full text-sm">OpenCV</span>
+                            <span
+                                class="px-3 py-1 bg-yellow-500 bg-opacity-20 text-yellow-400 rounded-full text-sm">ONNX</span>
+                        </div>
+                        <a href="https://github.com/keroles-salah/insightface_name_recognition_project"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-emerald-400 hover:text-teal-300 font-medium inline-flex items-center">
+                            <i class="fab fa-github mr-2"></i> View on GitHub <i
+                                class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Studio Invoice (Freelance) -->
+                <div class="card-modern rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <div class="h-48 bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center">
+                        <i class="fas fa-file-invoice-dollar text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold text-white">Studio Invoice System</h3>
+                            <span class="text-sm text-gray-400">2026</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            A premium RTL Arabic invoice page (INV-2024-0847) designed for a photography studio
+                            client on Khamsat — dark theme, full billing layout, order details and payment
+                            summary, ready to plug into a studio management system.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-rose-500 bg-opacity-20 text-rose-400 rounded-full text-sm">HTML</span>
+                            <span
+                                class="px-3 py-1 bg-blue-500 bg-opacity-20 text-blue-400 rounded-full text-sm">CSS</span>
+                            <span
+                                class="px-3 py-1 bg-green-500 bg-opacity-20 text-green-400 rounded-full text-sm">RTL UI</span>
+                        </div>
+                        <a href="https://github.com/keroles-salah/studio-invoice-preview" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-rose-400 hover:text-pink-300 font-medium inline-flex items-center">
+                            <i class="fab fa-github mr-2"></i> View on GitHub <i
+                                class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project: Fox Academy -->
+                <div class="card-modern rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-[#8b5cf6] flex items-center justify-center">
                         <i class="fas fa-code text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
@@ -441,14 +735,14 @@
                             <span
                                 class="px-3 py-1 bg-yellow-500 bg-opacity-20 text-yellow-400 rounded-full text-sm">JavaScript</span>
                         </div>
-                        <a href="#" class="text-[#6366f1] hover:text-[#8b5cf6] font-medium inline-flex items-center">
-                            View Project <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
+                        <span class="text-gray-500 text-sm inline-flex items-center">
+                            <i class="fas fa-lock mr-2"></i> Academic project — not publicly deployed
+                        </span>
                     </div>
                 </div>
 
                 <!-- YouTube Channel -->
-                <div class="card-modern rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-modern rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="600">
                     <div class="h-48 bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center">
                         <i class="fab fa-youtube text-white text-6xl"></i>
                     </div>
@@ -468,7 +762,8 @@
                             <p class="text-gray-400 text-sm"><i class="fas fa-play-circle text-red-400 mr-2"></i>Data
                                 Structures Explanations</p>
                         </div>
-                        <a href="#" class="text-red-400 hover:text-red-300 font-medium inline-flex items-center">
+                        <a href="https://www.youtube.com/@kerlssalah" target="_blank" rel="noopener noreferrer"
+                            class="text-red-400 hover:text-red-300 font-medium inline-flex items-center">
                             Visit Channel <i class="fas fa-external-link-alt ml-2"></i>
                         </a>
                     </div>
@@ -520,11 +815,11 @@
                         </div>
                         <div>
                             <div class="flex justify-between mb-2">
-                                <span class="text-gray-300 font-medium">Python</span>
-                                <span class="text-[#06b6d4]">75%</span>
+                                <span class="text-gray-300 font-medium">Python (ML & Data Science)</span>
+                                <span class="text-[#06b6d4]">85%</span>
                             </div>
                             <div class="skill-bar-bg h-2">
-                                <div class="skill-bar-fill" data-width="75"></div>
+                                <div class="skill-bar-fill" data-width="85"></div>
                             </div>
                         </div>
                         <div>
@@ -540,7 +835,7 @@
                 </div>
 
                 <div data-aos="fade-left">
-                    <h3 class="text-2xl font-semibold mb-8 text-white">Tools & Design</h3>
+                    <h3 class="text-2xl font-semibold mb-8 text-white">Tools & Frameworks</h3>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="card-modern p-6 rounded-xl text-center">
                             <i class="fab fa-html5 text-orange-500 text-4xl mb-3"></i>
@@ -553,14 +848,24 @@
                             <p class="text-gray-400 text-sm">Expert</p>
                         </div>
                         <div class="card-modern p-6 rounded-xl text-center">
-                            <i class="fab fa-js text-yellow-400 text-4xl mb-3"></i>
-                            <p class="text-white font-medium">JavaScript</p>
+                            <i class="fas fa-brain text-[#6366f1] text-4xl mb-3"></i>
+                            <p class="text-white font-medium">scikit-learn</p>
+                            <p class="text-gray-400 text-sm">Advanced</p>
+                        </div>
+                        <div class="card-modern p-6 rounded-xl text-center">
+                            <i class="fas fa-table text-purple-400 text-4xl mb-3"></i>
+                            <p class="text-white font-medium">Pandas & NumPy</p>
                             <p class="text-gray-400 text-sm">Advanced</p>
                         </div>
                         <div class="card-modern p-6 rounded-xl text-center">
                             <i class="fas fa-database text-green-400 text-4xl mb-3"></i>
                             <p class="text-white font-medium">MySQL</p>
                             <p class="text-gray-400 text-sm">Advanced</p>
+                        </div>
+                        <div class="card-modern p-6 rounded-xl text-center">
+                            <i class="fas fa-stream text-red-400 text-4xl mb-3"></i>
+                            <p class="text-white font-medium">Streamlit</p>
+                            <p class="text-gray-400 text-sm">Proficient</p>
                         </div>
                         <div class="card-modern p-6 rounded-xl text-center">
                             <i class="fab fa-git-alt text-orange-600 text-4xl mb-3"></i>
@@ -645,6 +950,13 @@
             <p class="text-gray-500 text-sm">&copy; 2026 Keroles Salah Fakhry. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})"
+        aria-label="Back to top"
+        class="fixed bottom-6 right-6 w-12 h-12 rounded-full btn-primary text-white flex items-center justify-center shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
 <script src="scripts.js"></script>
 </body>

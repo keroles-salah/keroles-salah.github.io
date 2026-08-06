@@ -23,6 +23,27 @@ window.addEventListener('scroll', function () {
     }
 });
 
+// Scroll progress bar + back-to-top button
+const scrollProgress = document.getElementById('scroll-progress');
+const backToTopBtn = document.getElementById('backToTop');
+window.addEventListener('scroll', function () {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    if (scrollProgress) {
+        scrollProgress.style.width = progress + '%';
+    }
+    if (backToTopBtn) {
+        if (scrollTop > 400) {
+            backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            backToTopBtn.classList.add('opacity-100');
+        } else {
+            backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            backToTopBtn.classList.remove('opacity-100');
+        }
+    }
+});
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

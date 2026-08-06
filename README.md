@@ -1,6 +1,6 @@
 # Keroles Salah Fakhry - Personal Portfolio
 
-A modern, responsive personal portfolio website built to showcase my skills, experience, projects, certifications, and educational content as a Computer Science student, problem-solving mentor, and tech educator.
+A modern, responsive personal portfolio website built to showcase my skills, experience, projects, certifications, and educational content as a Computer Science student, Machine Learning practitioner, problem-solving mentor, and tech educator.
 
 ## Live Demo
 
@@ -21,8 +21,9 @@ The website is designed with a modern dark theme, smooth animations, responsive 
 - Home / Hero Section
 - About Me
 - Education & Certifications
+- Featured Achievement (ITIDA/NTI Machine Learning Summer Training)
 - Work Experience
-- Featured Projects
+- Featured Projects (ML apps, freelance client work, educational content)
 - Technical Skills
 - Contact Section
 
